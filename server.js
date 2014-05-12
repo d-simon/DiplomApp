@@ -9,7 +9,15 @@ var mkdirp = require('mkdirp')
   , exec = require('child_process').exec
   , print = require('./lib/print')(exec, mkdirp, config)
   //, server = require('./lib/server')()
-  //, store = require('./lib/store')()
-  ;
+  , store = require('./lib/store')();
 
+
+// Inital state
+store.save('state', {
+    currentTerm: null,
+    subTerms: []
+});
+
+// Test
 print.print();
+console.log(store.get('state'));
