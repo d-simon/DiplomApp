@@ -1,5 +1,5 @@
-var mkdirp = require('mkdirp');
-var exec = require('child_process').exec;
+var mkdirp = require('mkdirp')
+  , exec = require('child_process').exec;
 
 function execute(command, callback) {
     var proc = exec(command);
@@ -17,11 +17,11 @@ function execute(command, callback) {
 }
 
 
-var cwd = __dirname,
-    screenDir = '/screenshots/screenshots/';
+var cwd = __dirname
+  , screenDir = '/screenshots/screenshots/';
 
 // Create directory if doesn't exist already
-mkdirp(cwd + screendir, function (err) {
+mkdirp(cwd + screenDir, function (err) {
     if (err) return;
 
     // Automator workflow
