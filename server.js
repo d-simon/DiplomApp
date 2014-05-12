@@ -1,31 +1,15 @@
+var config = {
+    screenDir: '/screenshots/screenshots/' // the nested directory hackfixes a bug/feature(?) in automator where the file is placed outside the actual dir
+  , cwd: __dirname
+  , workflowFile: 'print_screenshot.workflow'
+  , port: 8000
+};
+
 var mkdirp = require('mkdirp')
-  , exec = require('child_process').exec;
+  , exec = require('child_process').exec
+  , print = require('./lib/print')(exec, mkdirp, config)
+  //, server = require('./lib/server')()
+  //, store = require('./lib/store')()
+  ;
 
-function execute(command, callback) {
-    var proc = exec(command);
-
-    var list = [];
-    proc.stdout.setEncoding('utf8');
-
-    proc.stdout.on('data', function (chunk) {
-        list.push(chunk);
-    });
-
-    proc.stdout.on('end', function () {
-        callback(list.join());
-    });
-}
-
-
-var cwd = __dirname
-  , screenDir = '/screenshots/screenshots/';
-
-// Create directory if doesn't exist already
-mkdirp(cwd + screenDir, function (err) {
-    if (err) return;
-
-    // Automator workflow
-    execute('automator -D Path=' + cwd.replace(' ', '\ ') + screenDir + ' ' + 'print_screenshot.workflow', function (stdout) {
-        console.log(stdout);
-    });
-});
+print.print();
