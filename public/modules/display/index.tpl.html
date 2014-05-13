@@ -1,4 +1,10 @@
-<h1>{{state.currentTerm}}</h1>
-<ul class="termList">
-	<li ng-repeat="term in state.subTerms">{{ term.name }}</li>
-</ul>
+<div ng-show="state.currentTerm">
+    <h1>{{state.currentTerm}}</h1>
+    <ul class="termList">
+        <li ng-repeat="term in state.subTerms">{{ term.name }}</li>
+    </ul>
+
+</div>
+<div ng-hide="state.currentTerm">
+    InstallationsTitel
+</div>

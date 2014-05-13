@@ -23,6 +23,7 @@
                 $scope.$on('socket:update:state', function (ev, data) {
                     $scope.state = data;
                 });
+
             }
         ]);
 
