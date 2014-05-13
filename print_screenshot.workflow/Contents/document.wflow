@@ -748,7 +748,7 @@
 					<key>center</key>
 					<false/>
 					<key>chosenPrinterName</key>
-					<string>PDFwriter</string>
+					<string>Default Printer</string>
 					<key>printCopies</key>
 					<integer>1</integer>
 					<key>rotation</key>
@@ -882,14 +882,14 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>D6EE01D4-2E97-4C6F-A680-7ADA0FBDE929</key>
+		<key>3BE6F09E-EC35-4256-B523-1B0BC0982233</key>
 		<dict>
 			<key>from</key>
 			<string>DEBAC647-F940-4B52-85C1-EC5A40270E84 - DEBAC647-F940-4B52-85C1-EC5A40270E84</string>
 			<key>to</key>
 			<string>F942E14D-90FA-413A-AE62-3D3B10426FC1 - F942E14D-90FA-413A-AE62-3D3B10426FC1</string>
 		</dict>
-		<key>DEE8D1BD-DC22-41CA-B84B-14716C390EFB</key>
+		<key>9AB957AD-6404-43A7-869A-4CC403B23EED</key>
 		<dict>
 			<key>from</key>
 			<string>45F6E93B-F6FA-4B7D-B528-9F7F6EAA54C7 - 45F6E93B-F6FA-4B7D-B528-9F7F6EAA54C7</string>
