@@ -1,3 +1,6 @@
-<ul class="termList">
-	<li ng-repeat="term in terms"><a ui-sref="select.list({ term: term })">{{ term }}</a></li>
-</ul>
+<div class="container termListContainer">
+    <div class="termListCenter"><ul class="termList">
+        	<li ng-repeat="term in terms"><a ui-sref="select.list({ term: term })">{{ term }}</a></li>
+        </ul>
+    </div>
+</div>

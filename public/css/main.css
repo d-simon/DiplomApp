@@ -32,6 +32,18 @@ h1, h2, h3, h4, h5, h6 {
     -ms-transform: translateY(-80px);
     transform: translateY(-80px);
 }
+.container.termListContainer {
+    min-height:600px;
+}
+.termListCenter {
+    position: relative;
+    top: 50%;
+    -moz-transform: translateY(-290px);
+    -webkit-transform: translateY(-290px);
+    -o-transform: translateY(-290px);
+    -ms-transform: translateY(-290px);
+    transform: translateY(-290px);
+}
 
 .mainheading {
     font-family: 'themixextralight_italic';
@@ -78,4 +90,16 @@ ul {
 .termList li {
     font-size: 40px;
     line-height: 2;
+}
+
+li {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+li.selected {
+    font-family: 'thesansbw5_plain';
+    margin:20px;
 }

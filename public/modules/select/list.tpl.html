@@ -1,7 +1,7 @@
-<a ui-sref="select.overview">&larr; zurück</a><h1>{{ term }}</h1>
+<a ui-sref="select.overview" class="back">&larr; zurück</a><h1>{{ term }}</h1>
 
 <ul class="subTermsList">
-    <li ng-repeat="subTerm in subTerms" ng-click="select(subTerm)">{{ subTerm.name }}</li>
+    <li ng-repeat="subTerm in subTerms" ng-click="select(subTerm)" ng-class="{ selected: isSelected(subTerm.name) > -1}">{{ subTerm.name }}</li>
 </ul>
 
 <br>

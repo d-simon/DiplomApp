@@ -36,8 +36,7 @@
                 });
 
                 $scope.select = function (term) {
-                    var selectedIndex = $scope.state.subTerms.indexOf(term);
-                    console.log(selectedIndex, term, $scope.state.subTerms);
+                    var selectedIndex = $scope.isSelected(term.name);
                     if (selectedIndex > -1) {
                         $scope.state.subTerms.splice(selectedIndex, 1);
                         dataService.updateState($scope.state)
@@ -58,9 +57,9 @@
 
                 $scope.isSelected = function (newTermName) {
                     for (var i = 0; i < $scope.state.subTerms.length; i++) {
-                        if (newTermName == $scope.state.subTerms[i].name) return true;
+                        if (newTermName == $scope.state.subTerms[i].name) return i;
                     }
-                    return false;
+                    return -1;
                 };
 
                 $scope.print = function () {
