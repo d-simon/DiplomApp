@@ -8,18 +8,20 @@
                     .state("select.list", {
                         url: "/list/:term",
                         templateUrl: "modules/select/list.tpl.html",
-                        controller: "SelectListCtrl"
+                        controller: "SelectListCtrl",
+                        resolve: {
+                            resolvedSubTerms: ['DataService', function (dataService) {
+                                return dataService.getSubTerms();
+                            }]
+                        }
                     });
             }
         ])
-        .controller('SelectListCtrl', ['$scope', '$rootScope', '$stateParams', 'socket', 'DataService', 'StateService', function ($scope, $rootScope, $stateParams, socket, dataService, stateService) {
+        .controller('SelectListCtrl', ['$scope', '$stateParams', 'socket', 'DataService', 'StateService', 'resolvedSubTerms', function ($scope, $stateParams, socket, dataService, stateService, resolvedSubTerms) {
             $scope.term = $scope.$stateParams.term;
+            $scope.subTerms = resolvedSubTerms;
 
-            if ($rootScope.isForcedChange !== true) {
-                dataService.updateState({currentTerm: $stateParams.term, subTerms: []});
-            } else {
-                $rootScope.isForcedChange = false;
-            }
+            dataService.updateState({currentTerm: $stateParams.term, subTerms: []});
 
             $scope.$on('socket:update:state', function (ev, data) {
                 stateService.interpretState(data.currentTerm, data.subTerms);

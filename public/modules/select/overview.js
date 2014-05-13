@@ -17,15 +17,10 @@
                     });
             }
         ])
-        .controller('SelectOverviewCtrl', ['$scope', '$rootScope', 'socket', 'resolvedTerms', 'DataService', 'StateService', function ($scope, $rootScope, socket, resolvedTerms, dataService, stateService) {
+        .controller('SelectOverviewCtrl', ['$scope', 'socket', 'resolvedTerms', 'DataService', 'StateService', function ($scope, socket, resolvedTerms, dataService, stateService) {
             $scope.terms = resolvedTerms;
 
-
-            if ($rootScope.isForcedChange !== true) {
-                dataService.updateState({currentTerm: null, subTerms: []});
-            } else {
-                $rootScope.isForcedChange = false;
-            }
+            dataService.updateState({currentTerm: null, subTerms: []});
 
             $scope.$on('socket:update:state', function (ev, data) {
                 stateService.interpretState(data.currentTerm, data.subTerms, true);

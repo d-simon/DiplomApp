@@ -14,6 +14,9 @@
                 }
             };
 
+            service.interpretDisplayState = function (term, subterms, isForcedChange) {
+            };
+
             return service;
 
         }]);

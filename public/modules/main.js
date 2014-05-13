@@ -5,6 +5,7 @@
         "ui.router",
         "btford.socket-io",
         "diplomApp.select",
+        "diplomApp.display",
         "diplomApp.data"
     ])
         .config(["$urlRouterProvider",
