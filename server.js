@@ -17,7 +17,7 @@ var mkdirp = require('mkdirp')
 
 // Modules
 var print = require('./lib/print')(exec, mkdirp, config)
-  , store = require('./lib/store')()
+  , store = require('./lib/store')(deepcopy)
   , server = require('./lib/server')(express, bodyParser, store, config)
   ;
 
