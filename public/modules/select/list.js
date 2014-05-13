@@ -17,8 +17,12 @@
                     });
             }
         ])
-        .controller('SelectListCtrl', ['$scope', '$stateParams', 'socket', 'DataService', 'StateService', 'resolvedSubTerms', 
-            function ($scope, $stateParams, socket, dataService, stateService, resolvedSubTerms) {
+        .controller('SelectListCtrl', ['$scope', '$state', '$stateParams', 'socket', 'DataService', 'StateService', 'resolvedSubTerms', 
+            function ($scope, $state, $stateParams, socket, dataService, stateService, resolvedSubTerms) {
+                $scope.state = {
+                    term: null,
+                    subTerms: []
+                };
                 $scope.term = $scope.$stateParams.term;
                 $scope.subTerms = resolvedSubTerms;
 
@@ -33,6 +37,7 @@
 
                 $scope.select = function (term) {
                     var selectedIndex = $scope.state.subTerms.indexOf(term);
+                    console.log(selectedIndex, term, $scope.state.subTerms);
                     if (selectedIndex > -1) {
                         $scope.state.subTerms.splice(selectedIndex, 1);
                         dataService.updateState($scope.state)
@@ -49,6 +54,19 @@
                                 $scope.state = response.data;
                             });
                     }
+                };
+
+                $scope.isSelected = function (newTermName) {
+                    for (var i = 0; i < $scope.state.subTerms.length; i++) {
+                        if (newTermName == $scope.state.subTerms[i].name) return true;
+                    }
+                    return false;
+                };
+
+                $scope.print = function () {
+                    stateService.print().then(function (response) {
+                        $state.go('select.overview');
+                    });
                 };
         }]);
 

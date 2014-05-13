@@ -12,12 +12,11 @@
                     });
             }
         ])
-        .controller('DisplayCtrl', ['$scope', '$rootScope', 'socket', 'DataService', 'StateService',
-            function ($scope, $rootScope, socket, dataService, stateService) {
+        .controller('DisplayCtrl', ['$scope', '$rootScope', 'socket', 'DataService',
+            function ($scope, $rootScope, socket, dataService) {
 
                 dataService.getState().then(function (response) {
                     $scope.state = response.data;
-                    stateService.interpretDisplayState($scope.state.currentTerm, $scope.state.subTerms, true);
                 });
 
                 $scope.$on('socket:update:state', function (ev, data) {

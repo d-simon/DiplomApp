@@ -1,5 +1,9 @@
 <a ui-sref="select.overview">&larr; zurück</a><h1>{{ term }}</h1>
 
 <ul class="subTermsList">
-    <li ng-repeat="subTerm in subTerms" ng-click="select(subTerm)">{{ subTerm.name }} <span ng-show="state.subTerms.indexOf(subTerm.name) > -1">&larr; Test</span></li>
+    <li ng-repeat="subTerm in subTerms" ng-click="select(subTerm)">{{ subTerm.name }}</li>
 </ul>
+
+<br>
+<br>
+<h2><a ng-click="print()" ng-show="state.subTerms.length >= 3">Print</a></h2>

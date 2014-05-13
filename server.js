@@ -20,7 +20,7 @@ var mkdirp = require('mkdirp')
 var print = require('./lib/print')(exec, mkdirp, config)
   , store = require('./lib/store')(deepcopy)
   , apiRouter = require('./lib/apirouter') // initialized inside servers
-  , servers = require('./lib/server')(express, bodyParser, io, apiRouter, store, config)
+  , servers = require('./lib/server')(express, bodyParser, io, apiRouter, store, print, config)
   , expressServer = servers['ioServer']
   , ioServer = servers['expressServer']
   , expressApp = servers['expressApp']
@@ -31,7 +31,3 @@ store.save('state', {
     currentTerm: null,
     subTerms: []
 });
-
-// Test
-print.print();
-console.log(store.get('state'));

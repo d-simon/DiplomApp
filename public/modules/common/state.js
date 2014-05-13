@@ -14,9 +14,9 @@
                 }
             };
 
-            service.interpretDisplayState = function (term, subterms, isForcedChange) {
+            service.print = function () {
+                return $http.post('/api/print');
             };
-
             return service;
 
         }]);
