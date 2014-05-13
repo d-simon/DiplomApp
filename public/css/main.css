@@ -1,6 +1,10 @@
 html, body {
     font-size: 20px;
     font-family: 'thesansbw2_extralight', sans-serif;
+    text-align: center;
+    height: 100%;
+    margin:0;
+    padding:0;
 }
 
 a {
@@ -8,14 +12,67 @@ a {
     text-decoration: none;
 }
 
-.termList {
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+.container {
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.titlecenter {
+    position: relative;
+    top: 50%;
+    -moz-transform: translateY(-80px);
+    -webkit-transform: translateY(-80px);
+    -o-transform: translateY(-80px);
+    -ms-transform: translateY(-80px);
+    transform: translateY(-80px);
+}
+
+.mainheading {
+    font-family: 'themixextralight_italic';
+    font-size: 50px;
+    position:relative;
+    letter-spacing: 0.06em;
+    margin-bottom: 0px;
+}
+.hr-title {
+    display:block;
+    width:90%;
+    max-width:800px;
+    height:2px;
+    margin:-3px auto 0;
+    border-width: 3px 0 1px;
+    border-style: solid;
+}
+.subheading {
+    font-family: 'themixextralight_caps';
+    letter-spacing: 0.1em;
+    font-size:20px;
+    margin-top: 10px;
+}
+
+
+.subTermImage {
+    position:absolute;
+    width:100%;
+    top:100px;
+    left:0;
+}
+
+ul {
     display: block;
     margin: 0;
     padding: 0;
     width: 100%;
+    list-style: none;
 }
+
 .termList li {
     font-size: 40px;
-    text-align: center;
     line-height: 2;
 }

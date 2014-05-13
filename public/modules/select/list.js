@@ -36,9 +36,18 @@
                     if (selectedIndex > -1) {
                         $scope.state.subTerms.splice(selectedIndex, 1);
                         dataService.updateState($scope.state)
-                    } else if ($scope.state.subTerms.length < 3) {
+                            .then(function (response) {
+                                $scope.state = response.data;
+                            });
+                    } else {
+                        if ($scope.state.subTerms.length >= 3) {
+                            $scope.state.subTerms.shift(0,1);
+                        }
                         $scope.state.subTerms.push(term);
                         dataService.updateState($scope.state)
+                            .then(function (response) {
+                                $scope.state = response.data;
+                            });
                     }
                 };
         }]);

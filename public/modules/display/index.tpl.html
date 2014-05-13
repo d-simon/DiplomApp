@@ -1,10 +1,15 @@
 <div ng-show="state.currentTerm">
     <h1>{{state.currentTerm}}</h1>
-    <ul class="termList">
-        <li ng-repeat="term in state.subTerms">{{ term.name }}</li>
-    </ul>
+    <span ng-repeat="term in state.subTerms">{{ term.name }} </span>
+    <div  ng-repeat="term in state.subTerms">
+        <img ng-src="{{ term.image }}" class="subTermImage">
+    </div>
 
 </div>
-<div ng-hide="state.currentTerm">
-    InstallationsTitel
+<div ng-hide="state.currentTerm" class="container">
+    <div class="titlecenter">
+        <h1 class="mainheading">zitronenschweiss &amp; blumenteer</h1>
+        <div class="hr-title"></div>
+        <h5 class="subheading">eine olfaktorisch / visuelle Studie</h5>
+    </div>
 </div>
