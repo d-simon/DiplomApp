@@ -17,6 +17,7 @@
             service.print = function () {
                 return $http.post('/api/print');
             };
+
             return service;
 
         }]);

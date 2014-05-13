@@ -17,7 +17,7 @@
                     });
             }
         ])
-        .controller('SelectListCtrl', ['$scope', '$state', '$stateParams', 'socket', 'DataService', 'StateService', 'resolvedSubTerms', 
+        .controller('SelectListCtrl', ['$scope', '$state', '$stateParams', 'socket', 'DataService', 'StateService', 'resolvedSubTerms',
             function ($scope, $state, $stateParams, socket, dataService, stateService, resolvedSubTerms) {
                 $scope.state = {
                     term: null,
