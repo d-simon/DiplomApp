@@ -15,10 +15,15 @@ var mkdirp = require('mkdirp')
   , io = require('socket.io')
   ;
 
+
 // Modules
 var print = require('./lib/print')(exec, mkdirp, config)
   , store = require('./lib/store')(deepcopy)
-  , server = require('./lib/server')(express, bodyParser, store, config)
+  , apiRouter = require('./lib/apirouter') // initialized inside servers
+  , servers = require('./lib/server')(express, bodyParser, io, apiRouter, store, config)
+  , expressServer = servers['ioServer']
+  , ioServer = servers['expressServer']
+  , expressApp = servers['expressApp']
   ;
 
 // Inital state
@@ -26,9 +31,6 @@ store.save('state', {
     currentTerm: null,
     subTerms: []
 });
-
-io.listen(server);
-
 
 // Test
 print.print();

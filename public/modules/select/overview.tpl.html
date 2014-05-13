@@ -1,7 +1,3 @@
-<button ng-click="add()">Add</button>
-<ul>
-	<li ng-repeat="item in derp track by $index" ng-click="delete($index)">{{item}}</li>
+<ul class="termList">
+	<li ng-repeat="term in terms"><a ui-sref="select.list({ term: term })">{{ term }}</a></li>
 </ul>
-
-
-{{derp[0]}}

@@ -1,1 +1,5 @@
-List for <b> {{ term }}</b>
+<a ui-sref="select.overview">&larr; zurück</a><h1>{{ term }}</h1>
+
+<ul class="adjectivesList">
+    <li ng-repeat="adjective in adjectives" ng-click="select(adjective)">{{ term }}</li>
+</ul>

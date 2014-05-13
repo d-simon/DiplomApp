@@ -2,3 +2,20 @@ html, body {
     font-size: 20px;
     font-family: 'thesansbw2_extralight', sans-serif;
 }
+
+a {
+    color:#000;
+    text-decoration: none;
+}
+
+.termList {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.termList li {
+    font-size: 40px;
+    text-align: center;
+    line-height: 2;
+}
