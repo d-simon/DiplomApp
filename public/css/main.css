@@ -99,7 +99,29 @@ li {
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-li.selected {
+.subTermsList {
+    margin:30px auto 0;
+    max-width:660px;
+    width:90%;
+}
+.subTermsList li {
+    display:block;
+    margin:10px;
+    width:200px;
+    float:left;
+    cursor: pointer;
+}
+.subTermsList li.selected {
     font-family: 'thesansbw5_plain';
-    margin:20px;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
 }
