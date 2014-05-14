@@ -219,7 +219,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:720.000000</string>
+				<string>309.500000:774.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Take Screenshot.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -688,7 +688,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:429.000000</string>
+				<string>309.500000:483.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -746,7 +746,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>center</key>
-					<false/>
+					<true/>
 					<key>chosenPrinterName</key>
 					<string>Default Printer</string>
 					<key>printCopies</key>
@@ -754,9 +754,9 @@
 					<key>rotation</key>
 					<integer>0</integer>
 					<key>scaleToFit</key>
-					<false/>
+					<true/>
 					<key>useAutoRotate</key>
-					<false/>
+					<true/>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.PrintImage</string>
@@ -872,7 +872,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:210.000000</string>
+				<string>309.500000:264.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Print Images.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -882,19 +882,19 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>3BE6F09E-EC35-4256-B523-1B0BC0982233</key>
-		<dict>
-			<key>from</key>
-			<string>DEBAC647-F940-4B52-85C1-EC5A40270E84 - DEBAC647-F940-4B52-85C1-EC5A40270E84</string>
-			<key>to</key>
-			<string>F942E14D-90FA-413A-AE62-3D3B10426FC1 - F942E14D-90FA-413A-AE62-3D3B10426FC1</string>
-		</dict>
-		<key>9AB957AD-6404-43A7-869A-4CC403B23EED</key>
+		<key>0F9F0D6D-8943-48D1-8A49-AA3894E534D1</key>
 		<dict>
 			<key>from</key>
 			<string>45F6E93B-F6FA-4B7D-B528-9F7F6EAA54C7 - 45F6E93B-F6FA-4B7D-B528-9F7F6EAA54C7</string>
 			<key>to</key>
 			<string>DEBAC647-F940-4B52-85C1-EC5A40270E84 - DEBAC647-F940-4B52-85C1-EC5A40270E84</string>
+		</dict>
+		<key>70115DDC-5641-40A1-BE33-8CB77D9628A1</key>
+		<dict>
+			<key>from</key>
+			<string>DEBAC647-F940-4B52-85C1-EC5A40270E84 - DEBAC647-F940-4B52-85C1-EC5A40270E84</string>
+			<key>to</key>
+			<string>F942E14D-90FA-413A-AE62-3D3B10426FC1 - F942E14D-90FA-413A-AE62-3D3B10426FC1</string>
 		</dict>
 	</dict>
 	<key>variables</key>
