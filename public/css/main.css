@@ -1,5 +1,5 @@
 html, body {
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'thesansbw2_extralight', sans-serif;
     text-align: center;
     height: 100%;
@@ -26,28 +26,28 @@ h1, h2, h3, h4, h5, h6 {
 .titlecenter {
     position: relative;
     top: 50%;
-    -moz-transform: translateY(-80px);
-    -webkit-transform: translateY(-80px);
-    -o-transform: translateY(-80px);
-    -ms-transform: translateY(-80px);
-    transform: translateY(-80px);
+    -moz-transform: translateY(-110px);
+    -webkit-transform: translateY(-110px);
+    -o-transform: translateY(-110px);
+    -ms-transform: translateY(-110px);
+    transform: translateY(-110px);
 }
 .container.termListContainer {
-    min-height:600px;
+    min-height:620px;
 }
 .termListCenter {
     position: relative;
     top: 50%;
-    -moz-transform: translateY(-290px);
-    -webkit-transform: translateY(-290px);
-    -o-transform: translateY(-290px);
-    -ms-transform: translateY(-290px);
-    transform: translateY(-290px);
+    -moz-transform: translateY(-310px);
+    -webkit-transform: translateY(-310px);
+    -o-transform: translateY(-310px);
+    -ms-transform: translateY(-310px);
+    transform: translateY(-310px);
 }
 
 .mainheading {
     font-family: 'themixextralight_italic';
-    font-size: 50px;
+    font-size: 1.66rem;
     position:relative;
     letter-spacing: 0.06em;
     margin-bottom: 0px;
@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 .hr-title {
     display:block;
     width:90%;
-    max-width:800px;
+    max-width:850px;
     height:2px;
     margin:-3px auto 0;
     border-width: 3px 0 1px;
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 .subheading {
     font-family: 'themixextralight_caps';
     letter-spacing: 0.1em;
-    font-size:20px;
+    font-size:0.66rem;
     margin-top: 10px;
 }
 
@@ -72,11 +72,19 @@ h1, h2, h3, h4, h5, h6 {
 span.subTerm  {
     margin: 0 7px;
 }
+.subTermImageCenter {
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
 .subTermImage {
     position:absolute;
-    width:100%;
-    top:100px;
-    left:0;
+    width:1000px;
+    left:50%;
+    margin-left:-500px;
+    top:120px;
 }
 
 ul {
@@ -88,17 +96,10 @@ ul {
 }
 
 .termList li {
-    font-size: 40px;
+    font-size: 1.5rem;
     line-height: 2;
 }
 
-li {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
 .subTermsList {
     margin:30px auto 0;
     max-width:660px;
@@ -106,7 +107,7 @@ li {
 }
 .subTermsList li {
     display:block;
-    margin:10px;
+    margin:15px 10px;
     width:200px;
     float:left;
     cursor: pointer;

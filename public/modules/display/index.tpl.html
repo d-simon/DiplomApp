@@ -1,7 +1,7 @@
 <div ng-show="state.currentTerm">
     <h1>{{state.currentTerm}}</h1>
     <span ng-repeat="term in state.subTerms" class="subTerm">{{ term.name }} </span>
-    <div  ng-repeat="term in state.subTerms track by term.name">
+    <div ng-repeat="term in state.subTerms track by term.name" class="subTermImageCenter">
         <img ng-src="{{ term.image }}" class="subTermImage">
     </div>
 
