@@ -219,7 +219,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:774.000000</string>
+				<string>309.500000:791.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Take Screenshot.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -688,7 +688,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:483.000000</string>
+				<string>309.500000:500.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -703,31 +703,29 @@
 					<key>Container</key>
 					<string>List</string>
 					<key>Optional</key>
-					<false/>
+					<true/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.path</string>
+						<string>com.apple.cocoa.string</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.0.2</string>
+				<string>2.0.3</string>
 				<key>AMApplication</key>
 				<array>
-					<string>Preview</string>
+					<string>Automator</string>
 				</array>
 				<key>AMParameterProperties</key>
 				<dict>
-					<key>center</key>
+					<key>COMMAND_STRING</key>
 					<dict/>
-					<key>chosenPrinterName</key>
+					<key>CheckedForUserDefaultShell</key>
 					<dict/>
-					<key>printCopies</key>
+					<key>inputMethod</key>
 					<dict/>
-					<key>rotation</key>
+					<key>shell</key>
 					<dict/>
-					<key>scaleToFit</key>
-					<dict/>
-					<key>useAutoRotate</key>
+					<key>source</key>
 					<dict/>
 				</dict>
 				<key>AMProvides</key>
@@ -736,57 +734,60 @@
 					<string>List</string>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.path</string>
+						<string>com.apple.cocoa.string</string>
 					</array>
 				</dict>
 				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Print Images.action</string>
+				<string>/System/Library/Automator/Run Shell Script.action</string>
 				<key>ActionName</key>
-				<string>Print Images</string>
+				<string>Run Shell Script</string>
 				<key>ActionParameters</key>
 				<dict>
-					<key>center</key>
+					<key>COMMAND_STRING</key>
+					<string>for f
+do
+	lpr -o fit-to-page -o media=A6 -o ColorModel=Gray "$f"
+done</string>
+					<key>CheckedForUserDefaultShell</key>
 					<true/>
-					<key>chosenPrinterName</key>
-					<string>HP Photosmart 5520 series 2</string>
-					<key>printCopies</key>
+					<key>inputMethod</key>
 					<integer>1</integer>
-					<key>rotation</key>
-					<integer>1</integer>
-					<key>scaleToFit</key>
-					<true/>
-					<key>useAutoRotate</key>
-					<true/>
+					<key>shell</key>
+					<string>/bin/zsh</string>
+					<key>source</key>
+					<string></string>
 				</dict>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.PrintImage</string>
+				<string>com.apple.RunShellScript</string>
 				<key>CFBundleVersion</key>
-				<string>1.0.2</string>
+				<string>2.0.3</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<false/>
 				<key>CanShowWhenRun</key>
 				<true/>
 				<key>Category</key>
 				<array>
-					<string>AMCategoryPhotos</string>
+					<string>AMCategoryUtilities</string>
 				</array>
 				<key>Class Name</key>
-				<string>AMPrintImageAction</string>
+				<string>RunShellScriptAction</string>
 				<key>InputUUID</key>
-				<string>5E38B1C7-D7E1-4F01-A35F-D24D2F61700B</string>
+				<string>95C06A4D-80DE-4D72-90D3-0F1BB1034A10</string>
 				<key>Keywords</key>
 				<array>
-					<string>Print</string>
-					<string>Image</string>
-					<string>Photo</string>
+					<string>Shell</string>
+					<string>Script</string>
+					<string>Command</string>
+					<string>Run</string>
+					<string>Unix</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>B4674231-DC0D-459C-AF8F-CF327D010CCB</string>
+				<string>2D4B3EBC-3654-49D6-A8D6-874EA917A98A</string>
 				<key>UUID</key>
-				<string>F942E14D-90FA-413A-AE62-3D3B10426FC1</string>
+				<string>AD699D61-0CA5-42BE-BA9B-1AA61CF00B36</string>
 				<key>UnlocalizedApplications</key>
 				<array>
-					<string>Preview</string>
+					<string>Automator</string>
 				</array>
 				<key>arguments</key>
 				<dict>
@@ -795,7 +796,7 @@
 						<key>default value</key>
 						<integer>0</integer>
 						<key>name</key>
-						<string>rotation</string>
+						<string>inputMethod</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -806,9 +807,9 @@
 					<key>1</key>
 					<dict>
 						<key>default value</key>
-						<false/>
+						<string></string>
 						<key>name</key>
-						<string>scaleToFit</string>
+						<string>source</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -819,9 +820,9 @@
 					<key>2</key>
 					<dict>
 						<key>default value</key>
-						<string>Default Printer</string>
+						<false/>
 						<key>name</key>
-						<string>chosenPrinterName</string>
+						<string>CheckedForUserDefaultShell</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -832,9 +833,9 @@
 					<key>3</key>
 					<dict>
 						<key>default value</key>
-						<integer>1</integer>
+						<string></string>
 						<key>name</key>
-						<string>printCopies</string>
+						<string>COMMAND_STRING</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -845,9 +846,9 @@
 					<key>4</key>
 					<dict>
 						<key>default value</key>
-						<false/>
+						<string>/bin/sh</string>
 						<key>name</key>
-						<string>useAutoRotate</string>
+						<string>shell</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -855,26 +856,15 @@
 						<key>uuid</key>
 						<string>4</string>
 					</dict>
-					<key>5</key>
-					<dict>
-						<key>default value</key>
-						<false/>
-						<key>name</key>
-						<string>center</string>
-						<key>required</key>
-						<string>0</string>
-						<key>type</key>
-						<string>0</string>
-						<key>uuid</key>
-						<string>5</string>
-					</dict>
 				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:264.000000</string>
+				<string>309.500000:281.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Print Images.action/Contents/Resources/Base.lproj/main.nib</string>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -882,19 +872,19 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>B12D8E3E-6D71-48E3-91E0-F853B84CCC9A</key>
+		<key>32AE790C-C049-4DD4-8993-8CEC66720641</key>
+		<dict>
+			<key>from</key>
+			<string>DEBAC647-F940-4B52-85C1-EC5A40270E84 - DEBAC647-F940-4B52-85C1-EC5A40270E84</string>
+			<key>to</key>
+			<string>AD699D61-0CA5-42BE-BA9B-1AA61CF00B36 - AD699D61-0CA5-42BE-BA9B-1AA61CF00B36</string>
+		</dict>
+		<key>79F86F9E-8973-488D-AC6F-12F1A01F1A47</key>
 		<dict>
 			<key>from</key>
 			<string>45F6E93B-F6FA-4B7D-B528-9F7F6EAA54C7 - 45F6E93B-F6FA-4B7D-B528-9F7F6EAA54C7</string>
 			<key>to</key>
 			<string>DEBAC647-F940-4B52-85C1-EC5A40270E84 - DEBAC647-F940-4B52-85C1-EC5A40270E84</string>
-		</dict>
-		<key>F0574776-9DD9-4B86-BFDC-CB0A1A20363B</key>
-		<dict>
-			<key>from</key>
-			<string>DEBAC647-F940-4B52-85C1-EC5A40270E84 - DEBAC647-F940-4B52-85C1-EC5A40270E84</string>
-			<key>to</key>
-			<string>F942E14D-90FA-413A-AE62-3D3B10426FC1 - F942E14D-90FA-413A-AE62-3D3B10426FC1</string>
 		</dict>
 	</dict>
 	<key>variables</key>

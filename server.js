@@ -2,7 +2,7 @@
 var config = {
     screenDir: '/screenshots/screenshots/' // the nested directory hackfixes a bug/feature(?) in automator where the file is placed outside the actual dir
   , cwd: __dirname
-  , workflowFile: 'print_screenshot.workflow'
+  , workflowFile: 'print_screenshot_lpr.workflow'
   , port: process.env.PORT || 8000
 };
 
