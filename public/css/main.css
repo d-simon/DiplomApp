@@ -56,21 +56,26 @@ h1, h2, h3, h4, h5, h6 {
     display:block;
     width:90%;
     max-width:850px;
-    height:2px;
+    height:0;
     margin:-3px auto 0;
-    border-width: 3px 0 1px;
+    border-width: 3px 0 0px;
     border-style: solid;
 }
 .subheading {
     font-family: 'themixextralight_caps';
-    letter-spacing: 0.1em;
+    letter-spacing: 0.22em;
     font-size:0.66rem;
     margin-top: 10px;
 }
 
 
+h1.term {
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+}
 span.subTerm  {
-    margin: 0 7px;
+    display: block;
+    margin: 555px 7px 0 7px;
 }
 .subTermImageCenter {
     height:100%;
@@ -84,7 +89,7 @@ span.subTerm  {
     width:1000px;
     left:50%;
     margin-left:-500px;
-    top:120px;
+    top:40px;
 }
 
 ul {

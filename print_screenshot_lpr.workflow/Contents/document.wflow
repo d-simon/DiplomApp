@@ -70,7 +70,7 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Take Screenshot.action</string>
 				<key>ActionName</key>
-				<string>Bildschirmfoto aufnehmen</string>
+				<string>Take Screenshot</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>captureMainMonitorOnly</key>
@@ -106,13 +106,13 @@
 				<string>48758FEC-9E69-4F6A-9788-F745E9E83FA4</string>
 				<key>Keywords</key>
 				<array>
-					<string>Bild</string>
-					<string>Foto</string>
-					<string>Erstellen</string>
-					<string>Erstellen</string>
-					<string>Abfragen</string>
-					<string>Neu</string>
-					<string>Datei</string>
+					<string>Image</string>
+					<string>Photo</string>
+					<string>Create</string>
+					<string>Make</string>
+					<string>Get</string>
+					<string>New</string>
+					<string>File</string>
 				</array>
 				<key>OutputUUID</key>
 				<string>3C251A50-86F3-492A-945B-CE1C01369FC7</string>
@@ -219,9 +219,9 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>551.000000:1462.000000</string>
+				<string>309.500000:922.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Take Screenshot.action/Contents/Resources/German.lproj/main.nib</string>
+				<string>/System/Library/Automator/Take Screenshot.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -305,7 +305,7 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action</string>
 				<key>ActionName</key>
-				<string>Finder-Objekte umbenennen: Datum oder Uhrzeit hinzufügen</string>
+				<string>Rename Finder Items: Add Date or Time</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>caseIndicator</key>
@@ -372,26 +372,24 @@
 				<key>Keywords</key>
 				<array>
 					<string>Name</string>
-					<string>Datei</string>
-					<string>Ordner</string>
-					<string>Hinzufügen</string>
-					<string>Nummerierung</string>
-					<string>Ändern</string>
-					<string>Groß-/Kleinschreibung</string>
-					<string>Umbenennen</string>
-					<string>Datum</string>
-					<string>Dauer</string>
-					<string>Festlegen</string>
+					<string>File</string>
+					<string>Folder</string>
+					<string>Add</string>
+					<string>Number</string>
+					<string>Change</string>
+					<string>Case</string>
+					<string>Rename</string>
+					<string>Date</string>
+					<string>Time</string>
+					<string>Set</string>
 					<string>Text</string>
-					<string>Suchen</string>
-					<string>Ersetzen</string>
-					<string>Erstellen</string>
-					<string>Sequenziell</string>
+					<string>Find</string>
+					<string>Replace</string>
+					<string>Make</string>
+					<string>Sequential</string>
 				</array>
 				<key>OutputUUID</key>
 				<string>B05D5F5B-4D88-4B29-A587-F5E43D7C1054</string>
-				<key>StartAction</key>
-				<false/>
 				<key>UUID</key>
 				<string>D224D04B-0AF1-47BB-9E85-47B8745DE87E</string>
 				<key>UnlocalizedApplications</key>
@@ -585,7 +583,7 @@
 					<key>21</key>
 					<dict>
 						<key>default value</key>
-						<string>1</string>
+						<string>0</string>
 						<key>name</key>
 						<string>dateFormat</string>
 						<key>required</key>
@@ -611,7 +609,7 @@
 					<key>4</key>
 					<dict>
 						<key>default value</key>
-						<string>1</string>
+						<string>0</string>
 						<key>name</key>
 						<string>dateSeparator</string>
 						<key>required</key>
@@ -690,9 +688,9 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>551.000000:1171.000000</string>
+				<string>309.500000:631.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/German.lproj/main.nib</string>
+				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -776,7 +774,7 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action</string>
 				<key>ActionName</key>
-				<string>Finder-Objekte umbenennen: Datum oder Uhrzeit hinzufügen</string>
+				<string>Rename Finder Items: Add Date or Time</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>caseIndicator</key>
@@ -843,21 +841,21 @@
 				<key>Keywords</key>
 				<array>
 					<string>Name</string>
-					<string>Datei</string>
-					<string>Ordner</string>
-					<string>Hinzufügen</string>
-					<string>Nummerierung</string>
-					<string>Ändern</string>
-					<string>Groß-/Kleinschreibung</string>
-					<string>Umbenennen</string>
-					<string>Datum</string>
-					<string>Dauer</string>
-					<string>Festlegen</string>
+					<string>File</string>
+					<string>Folder</string>
+					<string>Add</string>
+					<string>Number</string>
+					<string>Change</string>
+					<string>Case</string>
+					<string>Rename</string>
+					<string>Date</string>
+					<string>Time</string>
+					<string>Set</string>
 					<string>Text</string>
-					<string>Suchen</string>
-					<string>Ersetzen</string>
-					<string>Erstellen</string>
-					<string>Sequenziell</string>
+					<string>Find</string>
+					<string>Replace</string>
+					<string>Make</string>
+					<string>Sequential</string>
 				</array>
 				<key>OutputUUID</key>
 				<string>036FE30E-2B43-4568-B261-F8824FA72FEB</string>
@@ -1054,7 +1052,7 @@
 					<key>21</key>
 					<dict>
 						<key>default value</key>
-						<string>1</string>
+						<string>0</string>
 						<key>name</key>
 						<string>dateFormat</string>
 						<key>required</key>
@@ -1080,7 +1078,7 @@
 					<key>4</key>
 					<dict>
 						<key>default value</key>
-						<string>1</string>
+						<string>0</string>
 						<key>name</key>
 						<string>dateSeparator</string>
 						<key>required</key>
@@ -1159,9 +1157,9 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>551.000000:772.000000</string>
+				<string>309.500000:412.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/German.lproj/main.nib</string>
+				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -1211,13 +1209,13 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Run Shell Script.action</string>
 				<key>ActionName</key>
-				<string>Shell-Skript ausführen</string>
+				<string>Run Shell Script</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
 					<string>for f
 do
-	lpr -o fit-to-page -o media=A6 -o ColorModel=Gray "$f"
+	lpr -o scaling=130 -o center -o media=A6 -o ColorModel=Gray "$f"
 done</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
@@ -1247,9 +1245,9 @@ done</string>
 				<key>Keywords</key>
 				<array>
 					<string>Shell</string>
-					<string>Skript</string>
-					<string>Befehl</string>
-					<string>Ausführen</string>
+					<string>Script</string>
+					<string>Command</string>
+					<string>Run</string>
 					<string>Unix</string>
 				</array>
 				<key>OutputUUID</key>
@@ -1331,9 +1329,9 @@ done</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>551.000000:373.000000</string>
+				<string>309.500000:193.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/German.lproj/main.nib</string>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -1341,21 +1339,21 @@ done</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>029B82A7-384B-4950-AEE3-54C0EC6DE1CA</key>
+		<key>32C82485-088D-40BB-AAD2-639D0824BD3D</key>
 		<dict>
 			<key>from</key>
 			<string>DEBAC647-F940-4B52-85C1-EC5A40270E84 - DEBAC647-F940-4B52-85C1-EC5A40270E84</string>
 			<key>to</key>
 			<string>AD699D61-0CA5-42BE-BA9B-1AA61CF00B36 - AD699D61-0CA5-42BE-BA9B-1AA61CF00B36</string>
 		</dict>
-		<key>62341BB2-F0B8-4F30-B1E3-C69FFB4B1A32</key>
+		<key>543CF88C-55E6-436E-BDD7-DFF3356B87A8</key>
 		<dict>
 			<key>from</key>
 			<string>45F6E93B-F6FA-4B7D-B528-9F7F6EAA54C7 - 45F6E93B-F6FA-4B7D-B528-9F7F6EAA54C7</string>
 			<key>to</key>
 			<string>D224D04B-0AF1-47BB-9E85-47B8745DE87E - D224D04B-0AF1-47BB-9E85-47B8745DE87E</string>
 		</dict>
-		<key>C59B80A0-B194-471B-A224-E0E2DA16C223</key>
+		<key>CEF7AC9C-2D9F-4321-8ADA-1F039A98A274</key>
 		<dict>
 			<key>from</key>
 			<string>D224D04B-0AF1-47BB-9E85-47B8745DE87E - D224D04B-0AF1-47BB-9E85-47B8745DE87E</string>
