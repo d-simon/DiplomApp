@@ -6,7 +6,7 @@
             function ($stateProvider) {
                 $stateProvider
                     .state("select.overview", {
-                        url: "",
+                        url: "/overview",
                         templateUrl: "modules/select/overview.tpl.html",
                         controller: "SelectOverviewCtrl",
                         resolve: {

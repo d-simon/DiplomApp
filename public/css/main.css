@@ -68,10 +68,32 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 10px;
 }
 
+.instructionsContainer {
+    margin-top: 40px;
+}
+.instructionsContainer p {
+    margin-top: 5px;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    line-height: 1.75;
+    margin-bottom:50px;
+}
+.instructionsContainer h3 {
+    font-family: 'thesansbw2_extralight', sans-serif;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    letter-spacing: 0.16em;
+}
+.instructionsContainer .go {
+    font-size: 1.4em:;
+}
+
 
 h1.term {
     text-transform: uppercase;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.12em;
+    font-size: 52px;
 }
 span.subTerm  {
     display: block;
@@ -103,6 +125,8 @@ ul {
 .termList li {
     font-size: 1.5rem;
     line-height: 2;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
 }
 
 .subTermsList {

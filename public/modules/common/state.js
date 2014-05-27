@@ -8,7 +8,9 @@
 
             service.interpretState = function (term, subterms, isForcedChange) {
                 if (!term) {
-                    $state.go('select.overview');
+                    if(!$state.includes('select.overview') && !$state.includes('select.instructions')) {
+                        $state.go('select.instructions');
+                    }
                 } else {
                     $state.go('select.list', { term: term });
                 }
